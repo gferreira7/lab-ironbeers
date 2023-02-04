@@ -20,9 +20,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   let data = {
-    image: "/images/beer.png",
-  }
+    image: '/images/beer.png'
+  };
   res.render('index', data);
+});
+
+app.get('/beers', (req, res) => {
+  punkAPI.getBeers().then(beers => {
+    let beerRes = beers;
+    res.render('beers', beerRes);
+  });
+
+  
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
