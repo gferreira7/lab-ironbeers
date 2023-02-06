@@ -1,3 +1,9 @@
 <div>
-  {{beerRes}}
+  {{#each beers}}
+  <img src="{{this.image_url}}" alt="">
+  {{this.name}}
+  {{this.description}}
+  {{this.tagline}}
+  {{/each}}
+
 </div>
