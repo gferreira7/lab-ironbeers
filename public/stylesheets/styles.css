@@ -3,5 +3,32 @@ white: #f7f9f9;
 light-blue: #2081c3;
 dark-blue: #0a2c42;
 grey: #bfbfbf;
-font-family: Arial, Helvetica, sans-serif;
+
 */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+nav{
+    height: 60px;
+    display:flex;
+    justify-content: flex-start;
+    background-color: #2081c3;
+    align-items: center;
+    padding-left: 2%;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    
+}
+nav a{
+    text-decoration: none;
+    color: #f7f9f9;
+}
